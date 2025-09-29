@@ -18,7 +18,7 @@ const SearchBar = ({ onFocus, onBlur }) => {
     const handleClickOutside = (event) => {
       if (searchRef.current && !searchRef.current.contains(event.target)) {
         setShowResults(false);
-        if (onBlur) onBlur(); // Ensure to call onBlur when clicking outside results/search input
+        if (onBlur) onBlur(); 
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
@@ -75,10 +75,10 @@ const SearchBar = ({ onFocus, onBlur }) => {
             if (query.trim()) setResults([]);
           }}
           onBlur={(e) => {
-            /* Use click outside logic to close not onBlur on input, so leave empty here */
+           
           }}
           className="w-full pl-10 pr-12 h-14 text-white placeholder:text-gray-300 dark:text-white dark:placeholder:text-gray-500 
-                    bg-white/10 dark:bg-gray-800/20 backdrop-blur-sm border-white/30 dark:border-gray-700/50 focus:border-white 
+                    bg-white/10 dark:bg-gray-800/20 backdrop-blur-sm border-white/30 dark:border-gray-500 focus:border-white 
                     focus:ring-2 focus:ring-white transition-all duration-300 shadow-xl"
         />
         {query && (
@@ -121,7 +121,7 @@ const SearchBar = ({ onFocus, onBlur }) => {
                       }}
                     />
                     <div className="flex-1 min-w-0">
-                      <h4 className="font-medium text-foreground truncate text-sm">{movie.title}</h4>
+                      <h4 className="font-medium truncate text-sm text-gray-900 dark:text-white">{movie.title}</h4>
                       <p className="text-xs text-muted-foreground flex items-center mt-1">
                         <Star className="w-3 h-3 text-yellow-500 mr-1 flex-shrink-0" />
                         <span className="text-gray-600 dark:text-gray-400 font-semibold mr-2">
