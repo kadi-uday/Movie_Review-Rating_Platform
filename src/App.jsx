@@ -6,6 +6,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import MovieDetail from './components/MovieDetail';
 import ScrollToTop from './components/ScrollToTop';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -25,9 +26,7 @@ function App() {
         </Routes>
       </main>
 
-      <footer className="w-full text-center p-4 border-t border-gray-200 dark:border-gray-700 text-sm text-gray-500 dark:text-gray-400 mt-12">
-        &copy; {new Date().getFullYear()} CinemaReviews. All rights reserved.
-      </footer>
+      <Footer />
     </div>
   );
 }
