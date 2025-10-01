@@ -85,7 +85,7 @@ npm install
 env
 
 VITE_CONTACT_FORM_KEY=your_key
-VITE_TMVITE_TMDB_API_KEYDB_KEY=your_key
+VITE_TMDB_API_KEY=your_key
 ```
 
 ### 4. Run the development server:
