@@ -1,4 +1,6 @@
-const TMDB_API_KEY = '4e44d9029b1270a757cddc766a1bcb63';
+import { TMDB_API_KEY_VALUE } from "./constants";
+
+const TMDB_API_KEY = TMDB_API_KEY_VALUE ;
 const TMDB_BASE_URL = 'https://api.themoviedb.org/3';
 const TMDB_IMAGE_BASE_URL = 'https://image.tmdb.org/t/p';
 

@@ -32,5 +32,6 @@ export const STATS = [
 
 export const TECH_ITEMS = ['React', 'JavaScript', 'Tailwind CSS', 'TMDB API'];
 
-export const CONTACT_FORM_KEY = "9d2d13f5-4533-4294-9fa0-d4552cf532f1";
-// import.meta.env.VITE_CONTACT_FORM_KEY;
+export const CONTACT_FORM_KEY = import.meta.env.VITE_CONTACT_FORM_KEY;
+
+export const TMDB_API_KEY_VALUE = import.meta.env.VITE_TMDB_API_KEY;
